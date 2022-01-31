@@ -5,9 +5,9 @@ install-hugo:
 	brew install hugo
 
 # webサーバーを起動する
-# buildするためやや遅い
+# buildするため初回はやや遅い
 run-app:
-	hugo server -D
+	hugo server -D -p 8080
 
 # 記事を作成する
 create-article:

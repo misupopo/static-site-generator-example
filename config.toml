@@ -1,5 +1,8 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Static Site Generator Example'
 theme = "ananke"
 
+[Params]
+customCSS = ["css/custom.css"]
+customJavascript = ["js/custom.js"]
