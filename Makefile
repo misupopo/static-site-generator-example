@@ -1,4 +1,9 @@
 
+# hugoをインストール
+# 「https://hacknote.jp/archives/54404/」を参考
+install-hugo:
+	brew install hugo
+
 # webサーバーを起動する
 # buildするためやや遅い
 run-app:
@@ -12,4 +17,3 @@ create-article:
 # public配下に作成される
 generate-public:
 	hugo
-
