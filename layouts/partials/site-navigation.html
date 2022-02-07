@@ -1,0 +1,26 @@
+<nav class="app_nav pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="{{ .Site.Home.RelPermalink }}" class="app_nav_logo f3 fw2 hover-white no-underline white-90 dib">
+      {{ with .Site.Params.siteLogo }}
+        <img src="{{ relURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    </a>
+    <div class="flex-l items-center">
+      {{ partial "i18nlist.html" . }}
+      {{ if .Site.Menus.main }}
+        <ul class="pl0 mr3">
+          {{ range .Site.Menus.main }}
+          <li class="app_nav_li list f5 f4-ns dib pr3">
+            <a class="dark-gray no-underline" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ partialCached "social-follow.html" . }}
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,14 @@
+{
+    "baseURL": "http://example.org/",
+    "languageCode": "en-us",
+    "title": "Static Site Generator Example",
+    "theme": "ananke",
+    "Params": {
+        "customCSS": ["css/custom.css"],
+        "customJavascript": ["js/custom.js"],
+        "siteLogo": "img/logo_200x117.png"
+    },
+    "Menus": {
+        "main": [{ "Name": "test" }]
+    }
+}
